@@ -57,3 +57,17 @@ Perl Call for replacing all template vars (_${varname}_) by his pendant in ENV
 
 Generate documentation with doxygen in CLI
 `doxygen <CONFIG_FILE>`
+
+###Put all together
+1. Buildstep will be (as shell):
+`curl -O "${WORKSPACE}/DOXYGEN_CONFIG" https://raw.github.com/newLoki/Oxid-Docset/master/DOXYGEN_CONFIG 
+export PROJECT_LOGO_PATH=/path/to/logo.png
+export DOCSET_PUBLISHER_ID=newLoki
+export DOCSET_PUBLISHER_NAME=newLoki
+perl -p -i -e 's/\$\{([^}]+)\}/defined $ENV{$1} ? $ENV{$1} : $&/eg' "${WORKSPACE}"/DOXYGEN_CONFIG
+doxygen "${WORKSPACE}"/DOXYGEN_CONFIG
+cd "${WORKSPACE}"/temp_docs/html
+make`
+
+* generate feed.xml
+* copy 
