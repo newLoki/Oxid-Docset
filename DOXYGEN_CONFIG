@@ -3,11 +3,11 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = {project.name}
+PROJECT_NAME           = ${project.name}
 PROJECT_NUMBER         = 
 PROJECT_BRIEF          = 
-PROJECT_LOGO           = {project.logo.path}
-OUTPUT_DIRECTORY       = {project.output.path}
+PROJECT_LOGO           = ${project.logo.path}
+OUTPUT_DIRECTORY       = ${project.output.path}
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = English
 BRIEF_MEMBER_DESC      = YES
@@ -108,7 +108,7 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = {project.input.path}
+INPUT                  = ${project.input.path}
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.php \
                          *.php3 \
@@ -164,10 +164,10 @@ HTML_TIMESTAMP         = YES
 HTML_DYNAMIC_SECTIONS  = NO
 HTML_INDEX_NUM_ENTRIES = 100
 GENERATE_DOCSET        = YES
-DOCSET_FEEDNAME        = {docset.feedname}
-DOCSET_BUNDLE_ID       = {docset.id}
-DOCSET_PUBLISHER_ID    = {docset.publisher.id}
-DOCSET_PUBLISHER_NAME  = {docset.publisher.name}
+DOCSET_FEEDNAME        = ${docset.feedname}
+DOCSET_BUNDLE_ID       = ${docset.id}
+DOCSET_PUBLISHER_ID    = ${docset.publisher.id}
+DOCSET_PUBLISHER_NAME  = ${docset.publisher.name}
 GENERATE_HTMLHELP      = NO
 CHM_FILE               = 
 HHC_LOCATION           = 
@@ -177,14 +177,14 @@ BINARY_TOC             = NO
 TOC_EXPAND             = NO
 GENERATE_QHP           = NO
 QCH_FILE               = 
-QHP_NAMESPACE          = {html.output.namespace}
+QHP_NAMESPACE          = ${html.output.namespace}
 QHP_VIRTUAL_FOLDER     = doc
 QHP_CUST_FILTER_NAME   = 
 QHP_CUST_FILTER_ATTRS  = 
 QHP_SECT_FILTER_ATTRS  = 
 QHG_LOCATION           = 
 GENERATE_ECLIPSEHELP   = NO
-ECLIPSE_DOC_ID         = {html.output.eclipse.id}
+ECLIPSE_DOC_ID         = ${html.output.eclipse.id}
 DISABLE_INDEX          = NO
 GENERATE_TREEVIEW      = NO
 ENUM_VALUES_PER_LINE   = 4
