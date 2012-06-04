@@ -42,6 +42,10 @@ But yet i doesn't get the feed.xml to work with Dash, if you figured out, how it
 Generating Docsets and related feed.xml files with Jenkins
 ==========
 
+Download basic configuration
+`curl https://raw.github.com/newLoki/Oxid-Docset/master/DOXYGEN_CONFIG -o ${WORKSPACE}/DOXYGEN_CONFIG`
+
+
 Exporting all needed VARS
 `export project.logo.path=/path/to/logo.png
 export docset.publisher.id=newLoki
