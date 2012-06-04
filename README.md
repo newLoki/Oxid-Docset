@@ -38,3 +38,8 @@ What's open
 Dash can use a xml feed wich have urls to the newest docset files.
 It will be cool to have a jenkins, which generates a actual docset with each build and a actuallize the feed.xml, so taht you can update your documentation in Dash by a single click.
 But yet i doesn't get the feed.xml to work with Dash, if you figured out, how it work's, you can tell me ;) 
+
+Generating Docsets and related feed.xml files with Jenkins
+==========
+Perl Call for replacing all template vars (_${varname}_) by his pendant in ENV
+`perl -p -i -e 's/\$\{([^}]+)\}/defined $ENV{$1} ? $ENV{$1} : $&/eg' template.txt`
