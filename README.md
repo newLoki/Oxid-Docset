@@ -42,6 +42,12 @@ But yet i doesn't get the feed.xml to work with Dash, if you figured out, how it
 Generating Docsets and related feed.xml files with Jenkins
 ==========
 
+Exporting all needed VARS
+`export project.logo.path=/path/to/logo.png
+export docset.publisher.id=newLoki
+export docset.publisher.name=newLoki`
+
+
 Perl Call for replacing all template vars (_${varname}_) by his pendant in ENV
 `perl -p -i -e 's/\$\{([^}]+)\}/defined $ENV{$1} ? $ENV{$1} : $&/eg' template.txt`
 
