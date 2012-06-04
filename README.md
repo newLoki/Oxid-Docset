@@ -27,3 +27,9 @@ After doxygen is finished, you can got to the output folder and call the _Makefi
 This takes a little time and afterward you have a docset inside the _html_ folder, which you can import into Dash.
 Thats it, now you can have so much fun with your project documentation, even if you are not connected, e.g.: on a long trip ;)
 
+
+What's open
+==========
+Dash can use a xml feed wich have urls to the newest docset files.
+It will be cool to have a jenkins, which generates a actual docset with each build and a actuallize the feed.xml, so taht you can update your documentation in Dash by a single click.
+But yet i doesn't get the feed.xml to work with Dash, if you figured out, how it work's, you can tell me ;) 
