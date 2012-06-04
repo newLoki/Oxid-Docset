@@ -3,11 +3,16 @@ Oxid-Docset
 
 Full Oxid documentation in apple docset format, to use with Dash
 
-Importing into Dash
+Importing from local into Dash
 ==========
 After downloading the docset from this repo, open Dash and open the preferences.
-If you see the _preferences_ window, go to the _docset_ tab and click on __+__ at the left bottom of the _en_ tab and navigate to the downloaded docset file.
+If you see the _preferences_ window, go to the _docset_ tab and click on __+__ at the left bottom of the _enable_ tab and navigate to the downloaded docset file.
 Thats it, now you can browse the documentation of OXID.
+
+Importing from web into Dash
+=========
+It almost the same as importing from local, but you have to use the __+__ button at the _download_ tab and paste https://raw.github.com/newLoki/Oxid-Docset/master/Oxid.xml into it.
+The benefit is that you only have to click at the _reload_ button to get the newest docset.
 
 Notes
 =========
